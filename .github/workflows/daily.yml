@@ -45,7 +45,7 @@ jobs:
           subject: "🎙️ Daily Sports Podcast — ${{ steps.gen.outputs.LONGDATE }}"
           body: |
             Your Philly-first daily sports recap is ready.
-            
+
             To listen: tap the attachment below, hit Share, choose ElevenReader.
             It'll land in your library ready to play.
           attachments: episodes/${{ steps.gen.outputs.DATE }}.txt
