@@ -29,18 +29,26 @@ const prompt = `You are a sports podcast host producing today's daily show for R
 
 TASK: Use the web_search tool to find today's most important sports news, then write a complete spoken-word podcast script.
 
-SEARCH STRATEGY — run these searches, in this order:
-1. "Philadelphia Phillies news today" — find every material update (games, injuries, roster, trades, manager quotes)
-2. "Philadelphia Eagles news today" — same depth. Draft and offseason reporting matter
-3. "Philadelphia 76ers news today" — playoff context, injury updates, front office
-4. "Philadelphia Flyers news today" — playoff race or offseason news
-5. "NBA news today" — top league headlines
-6. "NFL news today"
-7. "MLB news today"
-8. "NHL news today"
+SEARCH STRATEGY — run these searches in this order. Run EVERY Philly search even if early ones give you material — you're building complete coverage, not the fastest path:
 
-Prefer results from the last 24 to 48 hours. Trust ESPN, The Athletic, NBC Sports Philadelphia, The Philadelphia Inquirer, Action Network, and team beat writers. Be skeptical of social media rumor aggregators.
+Philly priority tier (run all five):
+1. "Phillies game recap last night" OR "Phillies ${date} result" — did they play, who pitched, what happened
+2. "Phillies news ${date}" — roster moves, injuries, quotes
+3. "Eagles news ${date}" — current reporting on the team. 
+4. "Sixers news ${date}" — playoff context, injury reports
+5. "Flyers news ${date}" — season status, trades, injuries
 
+League tier (one search each):
+6. "NBA games last night recap" — scores and top storylines
+7. "NFL news ${date}" — if draft recently happened, focus on post-draft coverage, trades, and roster moves
+8. "MLB games last night" — top performances and results
+9. "NHL games last night" — top performances and results
+
+After each search, check the publication date of results. If the top result is older than 24 hours, run ONE follow-up search with different keywords. Do not skip a Philly team even if the first search is thin — try team beat writer names, local Philly sports sites, or team Twitter.
+
+CRITICAL FRESHNESS RULE: If a story is more than 48 hours old, skip it entirely unless there is a new development today. Mock drafts, pre-game predictions, and speculation pieces published BEFORE an event already happened are garbage — ignore them. Only report what is actually current reality.
+
+Prefer results from the last 18-24 hours. Last night's games and this morning's beat reports are the highest priority. Trust ESPN, The Athletic, NBC Sports Philadelphia, The Philadelphia Inquirer, Action Network, and team beat writers. Check publication dates carefully — a well-written mock draft from three days ago is worthless if the draft already happened. Be skeptical of social media rumor aggregators.
 PRIORITY: Do not miss any material Philadelphia news. The four Philly teams are the spine of the show. League news is supporting.
 
 OUTPUT FORMAT — a natural spoken-word podcast script. This will be read aloud by ElevenReader's TTS.
@@ -76,7 +84,7 @@ const res = await fetch('https://api.anthropic.com/v1/messages', {
     model: 'claude-sonnet-4-20250514',
     max_tokens: 8000,
     messages: [{ role: 'user', content: prompt }],
-    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 15 }],
+    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 25 }],
   }),
 });
 
