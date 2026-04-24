@@ -1,4 +1,4 @@
-
+name: Daily Podcast
 on:
   schedule:
     - cron: '0 11 * * *'   # 7:00 AM ET (11:00 UTC)
