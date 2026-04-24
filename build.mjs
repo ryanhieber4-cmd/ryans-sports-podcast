@@ -86,9 +86,9 @@ const res = await fetch('https://api.anthropic.com/v1/messages', {
   },
   body: JSON.stringify({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 16000,
+    max_tokens: 32000,
     messages: [{ role: 'user', content: prompt }],
-    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 25 }],
+    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 15 }],
   }),
 });
 
@@ -102,7 +102,14 @@ const script = data.content
   .filter(b => b.type === 'text')
   .map(b => b.text).join('\n\n').trim();
 
-if (!script) throw new Error('Empty script returned from Anthropic.');
+if (!script) {
+  console.error('=== DIAGNOSTIC ===');
+  console.error('stop_reason:', data.stop_reason);
+  console.error('usage:', JSON.stringify(data.usage));
+  console.error('block types:', data.content.map(b => b.type).join(', '));
+  console.error('block count:', data.content.length);
+  throw new Error(`Empty script. stop_reason=${data.stop_reason}. See diagnostic above.`);
+}
 
 const header =
   `Ryan's Sports Podcast — ${longDate}\n` +
