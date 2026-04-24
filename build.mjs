@@ -1,10 +1,29 @@
 import fs from 'node:fs/promises';
 
+// ─── EDIT THESE TWO LINES TO CHANGE YOUR DAILY PODCAST STYLE ───
+const CONFIG = {
+  length: 'long',   // 'short' (10 min) | 'medium' (20 min) | 'long' (30 min)
+  tone:   'calm',   // 'classic' (Classic Radio) | 'hot' (Hot Take) | 'calm' (Analytical)
+};
+// ────────────────────────────────────────────────────────────────
+
 const today = new Date();
 const date = today.toISOString().slice(0, 10);
 const longDate = today.toLocaleDateString('en-US', {
   weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
 });
+
+const LENGTH = {
+  short:  'roughly ten minutes, 1400 to 1700 words',
+  medium: 'roughly twenty minutes, 2800 to 3300 words',
+  long:   'roughly thirty minutes, 4200 to 4800 words',
+}[CONFIG.length];
+
+const TONE = {
+  classic: 'Veteran Philadelphia sports radio host — warm, confident, knowledgeable. The smart best-of-WIP voice without the screaming.',
+  hot:     'Opinionated Philly sports columnist energy. Strong takes, more edge, still fair. Think Marcus Hayes or old-school Bill Conlin — willing to call things out.',
+  calm:    'The Athletic-style analytical voice. Measured, data-aware, thoughtful. Less reaction, more context and pattern.',
+}[CONFIG.tone];
 
 const prompt = `You are a sports podcast host producing today's daily show for Ryan, a Philadelphia sports fan. Today is ${longDate}.
 
@@ -32,9 +51,9 @@ HARD RULES FOR TTS:
 - Use em-dashes sparingly. Paragraph breaks for bigger pauses.
 - Write numbers the way a human says them. "Nola threw seven shutout innings" not "7 SO IP."
 - Speak in first person. Greet Ryan by name in the open. Sign off warmly in the close.
-- Veteran Philadelphia sports radio host — warm, confident, knowledgeable. The smart best-of-WIP voice without the screaming.
+- ${TONE}
 
-STRUCTURE — roughly twenty minutes, 2800 to 3300 words:
+STRUCTURE — ${LENGTH}:
 1. COLD OPEN: fifteen to twenty-five seconds, one sharp hook from today's biggest Philly story
 2. WELCOME: greet Ryan, ground the date, set up today's top three or four stories
 3. PHILLIES — everything meaningful from today
