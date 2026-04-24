@@ -14,9 +14,9 @@ const longDate = today.toLocaleDateString('en-US', {
 });
 
 const LENGTH = {
-  short:  'roughly ten minutes, 1400 to 1700 words',
-  medium: 'roughly twenty minutes, 2800 to 3300 words',
-  long:   'roughly thirty minutes, 4200 to 4800 words',
+  short:  'a ten-minute show, minimum 1400 words and ideally 1600',
+  medium: 'a twenty-minute show, minimum 2800 words and ideally 3100',
+  long:   'a thirty-minute show, minimum 4200 words and ideally 4500',
 }[CONFIG.length];
 
 const TONE = {
@@ -61,15 +61,19 @@ HARD RULES FOR TTS:
 - Speak in first person. Greet Ryan by name in the open. Sign off warmly in the close.
 - ${TONE}
 
-STRUCTURE — ${LENGTH}:
-1. COLD OPEN: fifteen to twenty-five seconds, one sharp hook from today's biggest Philly story
-2. WELCOME: greet Ryan, ground the date, set up today's top three or four stories
-3. PHILLIES — everything meaningful from today
-4. EAGLES — same
-5. SIXERS — same
-6. FLYERS — same
-7. AROUND THE LEAGUES — brisk quick-hits from NBA, NFL, MLB, NHL
-8. CLOSE — one reflection, warm sign-off to Ryan, tease tomorrow
+STRUCTURE — ${LENGTH}. TREAT THE LENGTH TARGET AS A HARD MINIMUM. The word range is not a suggestion — if you are under the minimum, you have not done the job. Expand analysis, add context, draw connections, deepen the discussion. Do not wrap up early.
+
+Per-segment guidance (for the 30-minute target; scale proportionally for shorter):
+1. COLD OPEN: 60–100 words. One sharp hook from today's biggest Philly story.
+2. WELCOME: 200–300 words. Greet Ryan, ground the date, preview the top three or four stories with a sentence on why each matters.
+3. PHILLIES SEGMENT: 800–1000 words. Game recap if they played, pitching matchup context, standout individual performances, injuries, roster moves, where the team sits in the standings and division. Analytical lens — what do recent trends tell us.
+4. EAGLES SEGMENT: 800–1000 words. Current reporting: post-draft reaction, rookie development, roster moves, OTAs, schedule, reporting from beat writers. Never report mock drafts or pre-event speculation as news.
+5. SIXERS SEGMENT: 500–700 words. Playoff or offseason status, injury reports, front office, trade rumors, coaching.
+6. FLYERS SEGMENT: 500–700 words. Season or offseason status, prospects, trades, injuries.
+7. AROUND THE LEAGUES: 600–900 words. Brisk quick-hits from NBA, NFL, MLB, NHL. Last night's results, biggest storylines, injuries, trades. Weave these — don't list them.
+8. CLOSE: 100–200 words. One genuine reflection connecting the day's threads, warm sign-off to Ryan by name, tease tomorrow.
+
+Before you finalize, estimate your total word count. If below the minimum target, go back and expand the segments that feel thinnest — add analysis, add context, add specific player and team detail. A too-short show is a failure; a show that hits the word target with real substance is the goal.
 
 Output ONLY the script. No preamble, no explanations, no list of sources. Start directly with the cold open.`;
 
@@ -82,7 +86,7 @@ const res = await fetch('https://api.anthropic.com/v1/messages', {
   },
   body: JSON.stringify({
     model: 'claude-sonnet-4-20250514',
-    max_tokens: 8000,
+    max_tokens: 16000,
     messages: [{ role: 'user', content: prompt }],
     tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 25 }],
   }),
