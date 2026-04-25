@@ -1,8 +1,9 @@
 name: Daily Sports Podcast
 on:
   schedule:
-    - cron: '30 9 * * *'   # ~5:30 AM EDT — primary
-    - cron: '0 11 * * *'   # ~7:00 AM EDT — backup
+    - cron: '30 9 * * *'    # ~5:30 AM EDT — primary
+    - cron: '0 10 * * *'    # ~6:00 AM EDT — backup
+    - cron: '23 11 * * *'   # ~7:23 AM EDT — final safety net
   workflow_dispatch:
 
 jobs:
