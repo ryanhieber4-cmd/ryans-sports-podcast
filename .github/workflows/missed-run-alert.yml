@@ -1,0 +1,42 @@
+name: Missed Run Alert
+on:
+  schedule:
+    - cron: '0 12 * * *'   # 8:00 AM EDT — checks if today's episode exists
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for today's episode
+        id: check
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          if [ -f "episodes/${DATE}.txt" ]; then
+            echo "FOUND=true" >> $GITHUB_OUTPUT
+            echo "Episode for $DATE exists. All good."
+          else
+            echo "FOUND=false" >> $GITHUB_OUTPUT
+            echo "MISSING for $DATE — alerting."
+          fi
+
+      - name: Email alert if missing
+        if: steps.check.outputs.FOUND == 'false'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Ryan's Sports Podcast <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "⚠️ No podcast today — manual run needed"
+          body: |
+            Today's automated run didn't fire.
+
+            Go to the Actions tab on GitHub and click "Run workflow" on Daily Sports Podcast to generate today's episode manually. Takes 30 seconds.
+
+            (This usually means GitHub's scheduler skipped your run. It typically self-corrects within a day or two.)
