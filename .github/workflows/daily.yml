@@ -1,7 +1,8 @@
 name: Daily Sports Podcast
 on:
   schedule:
-    - cron: '0 10 * * *'   # every day, 7:00 AM ET (11:00 UTC)
+    - cron: '30 9 * * *'   # ~5:30 AM EDT — primary
+    - cron: '0 11 * * *'   # ~7:00 AM EDT — backup
   workflow_dispatch:
 
 jobs:
@@ -15,6 +16,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Skip if today's episode already exists
+        run: |
+          if git ls-files episodes/ | grep -q "$(date -u +%Y-%m-%d).txt"; then
+            echo "Episode for today already committed. Exiting."
+            exit 0
+          fi
+
       - name: Generate episode
         id: gen
         run: |
@@ -26,7 +34,7 @@ jobs:
 
       - name: Commit episode to repo
         run: |
-          git config user.name  "podcast-bot"
+          git config user.name "podcast-bot"
           git config user.email "bot@users.noreply.github.com"
           git add episodes/
           git diff --cached --quiet || git commit -m "Episode ${{ steps.gen.outputs.DATE }}"
