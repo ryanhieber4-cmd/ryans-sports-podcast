@@ -2,9 +2,9 @@ import fs from 'node:fs/promises';
 
 // ─── EDIT THESE TO CHANGE YOUR DAILY PODCAST ───
 const CONFIG = {
-  length: 'long',                          // 'short' (10 min) | 'medium' (20 min) | 'long' (30 min)
-  tone:   'calm',                          // 'classic' (Classic Radio) | 'hot' (Hot Take) | 'calm' (Analytical)
-  model:  'claude-sonnet-4-20250514',      // budget option. Change to 'claude-opus-4-7' for higher quality at ~5x cost.
+  length: 'long',                // 'short' (10 min) | 'medium' (20 min) | 'long' (30 min)
+  tone:   'calm',                // 'classic' (Classic Radio) | 'hot' (Hot Take) | 'calm' (Analytical)
+  model:  'claude-opus-4-7',     // 'claude-opus-4-7' (recommended) | 'claude-sonnet-4-20250514' (cheaper)
 };
 // ────────────────────────────────────────────────
 
@@ -23,10 +23,17 @@ const monthDay = today.toLocaleDateString('en-US', { month: 'long', day: 'numeri
 const monthDayYesterday = yesterday.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
 const fullYesterday = yesterday.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
-const LENGTH = {
+const LENGTH_DESC = {
   short:  'a ten-minute show, minimum 1400 words and ideally 1600',
   medium: 'a twenty-minute show, minimum 2800 words and ideally 3100',
   long:   'a thirty-minute show, minimum 4200 words and ideally 4500',
+}[CONFIG.length];
+
+// Minimum word count — if output is below 50% of this, fail the build loudly
+const MIN_WORDS = {
+  short: 700,
+  medium: 1400,
+  long: 2100,
 }[CONFIG.length];
 
 const TONE = {
@@ -37,124 +44,117 @@ const TONE = {
 
 const prompt = `You are a sports podcast host producing today's daily show for Ryan, a Philadelphia sports fan.
 
-DATE CONTEXT:
+═══════════════════════════════════════════════════════════════
+SILENCE RULE — READ THIS FIRST. THIS IS THE MOST IMPORTANT INSTRUCTION.
+═══════════════════════════════════════════════════════════════
+
+You will conduct extensive research using the web_search tool. During that research, you MUST NOT produce any visible text output.
+
+Your ONLY text output for this entire response is the final podcast script — from cold open through close. Nothing else exists.
+
+DO NOT, under any circumstances:
+- Narrate what you are about to search for ("Let me search for...", "Now I'll look up...")
+- Summarize what you have found so far ("Looking at the scoreboard data...", "I can see that...")
+- Output a checklist, plan, status report, or research notes
+- Write preamble like "Here is your podcast" or "Now I'll write the script"
+- Confirm the user's request or acknowledge the task
+
+If you catch yourself typing "Let me..." or "Looking at..." or "I'll now..." or "Based on..." — STOP. Just call the next search tool silently, or begin writing the cold open. There is no in-between text.
+
+Run searches. Read results. Then write the script. That is your entire output.
+
+═══════════════════════════════════════════════════════════════
+DATE CONTEXT
+═══════════════════════════════════════════════════════════════
 - Today is ${longDate}
 - Yesterday was ${longYesterday}
 - "Last night" means games and news from yesterday evening (${monthDayYesterday})
 
-YOU HAVE TWO TOOLS:
-- web_search: returns search results (titles, URLs, snippets). Use this to find URLs.
-- web_fetch: retrieves the FULL CONTENT of a URL. Use this to actually read scoreboard pages and key articles. Snippets often miss scores or specific details — fetching gets you the real data.
-
 ═══════════════════════════════════════════════════════════════
-STEP ZERO — MANDATORY GAME RESULT VERIFICATION
+RESEARCH PHASE — silent, via tool calls only
 ═══════════════════════════════════════════════════════════════
 
-Before you write a single sentence of this script, you MUST complete this verification using BOTH tools. Missing a game result that happened last night is the cardinal failure of this show.
+Your research must establish these four facts before you write anything:
 
-PHASE A — find scoreboard URLs (use web_search):
-  1. "MLB scoreboard ${fullYesterday}" — look for an ESPN or MLB.com URL with yesterday's date
-  2. "NBA scoreboard ${fullYesterday}" — look for an ESPN or NBA.com URL
-  3. "NHL scoreboard ${fullYesterday}" — look for an ESPN or NHL.com URL
+  • PHILLIES last night: did they play, and if so what was the final score
+  • SIXERS  last night: did they play, and if so what was the final score
+  • FLYERS  last night: did they play, and if so what was the final score
+  • EAGLES  current status: any breaking news in the last 24 hours
 
-PHASE B — fetch the actual scoreboards (use web_fetch):
-  4. web_fetch the MLB scoreboard URL — read every game result, especially the Phillies if they're listed
-  5. web_fetch the NBA scoreboard URL — read every game result, especially the Sixers
-  6. web_fetch the NHL scoreboard URL — read every game result, especially the Flyers
+Run these scoreboard searches FIRST (silently, via tool calls):
 
-PHASE C — fill out this checklist before proceeding:
+1. "MLB scoreboard ${fullYesterday}" — Phillies result
+2. "NBA scoreboard ${fullYesterday}" — Sixers result
+3. "NHL scoreboard ${fullYesterday}" — Flyers result
 
-  PHILLIES last night: [played and won/lost X-Y vs OPPONENT, with key details from box score] OR [were off / no game scheduled]
-  SIXERS  last night: [played and won/lost X-Y vs OPPONENT] OR [were off / season over / no game scheduled]
-  FLYERS  last night: [played and won/lost X-Y vs OPPONENT] OR [were off / season over / no game scheduled]
-  EAGLES current status: [breaking news from last 24 hours, OR confirmed quiet day in the offseason]
+If a scoreboard search does not clearly show a Philly team's result, run a follow-up:
+  • "Phillies vs [opponent] ${monthDayYesterday} final score"
+  • "[Team] ${monthDayYesterday} recap" or "[Team] box score ${monthDayYesterday}"
 
-If a Philly team played and you don't have their final score after fetching the scoreboard, run a follow-up search like "Phillies vs [opponent] ${monthDayYesterday} final score" and fetch the resulting recap article. Do not proceed with "unknown" status for any Philly team.
+Continue searching silently until each Philly team's status is definitively known. A vague article is not confirmation — you need an actual final score or confirmation of no game scheduled.
 
-═══════════════════════════════════════════════════════════════
-PHASE D — DEEP CONTEXT (search + fetch on key articles)
-═══════════════════════════════════════════════════════════════
+Then run these deep-dive searches (still silent):
 
-Once you have game status confirmed, dig into each Philly team. The pattern is the same: search to find the URL, then fetch the most authoritative article in full.
+4. "Phillies this morning" OR "Phillies ${monthDay}"
+5. "Eagles news this morning" OR "Eagles ${monthDay}"
+6. "Sixers ${monthDay}" OR "Sixers news today"
+7. "Flyers ${monthDay}" OR "Flyers news today"
+8. "NBA last night recap"
+9. "NFL news today"
+10. "MLB last night recap"
+11. "NHL last night recap"
 
-For each Philly team, run a search like:
-  • "Phillies this morning" OR "Phillies ${monthDay} Inquirer" OR "Phillies NBC Sports Philly"
-  • "Eagles news this morning ${monthDay}"
-  • "Sixers news today ${monthDay}"
-  • "Flyers news today ${monthDay}"
-
-When a search surfaces a fresh, authoritative article (Inquirer, Athletic, NBC Sports Philly, beat writer column dated today or last night), web_fetch it for full context. Snippets are not enough for the cold open or lead segments — fetch the article.
-
-For the Eagles specifically: NFL is in offseason. Look for post-draft reaction, OTA news, signings, schedule news. Never report mock drafts as current news.
-
-For league coverage:
-  • "NBA last night recap"
-  • "NFL news today"
-  • "MLB last night recap"
-  • "NHL last night recap"
-For league hits, snippets are usually enough — only fetch articles when there's a major storyline you want to lead the segment with.
+Beat-writer follow-ups when needed: Matt Gelb (Phillies), Jimmy Kempski / Zach Berman (Eagles), Kyle Neubeck (Sixers), Charlie O'Connor (Flyers). Or "Inquirer [team]", "NBC Sports Philly [team]", "The Athletic [team]".
 
 ═══════════════════════════════════════════════════════════════
-THE FRESHNESS DOCTRINE
+FRESHNESS DOCTRINE
 ═══════════════════════════════════════════════════════════════
 
-This is a DAILY podcast. Ryan listened to yesterday's episode. He already heard everything that broke before yesterday morning. Re-reporting yesterday's news is failure.
+Ryan listened to yesterday's episode. Re-reporting yesterday's news is failure.
 
-TIER 1 — LEAD WITH THESE. Last 12 hours:
-  • Last night's game results, box scores, standout performances
-  • Overnight or this-morning breaking news
-  • Beat writer columns published today
-  • Press conferences and quotes from last night or this morning
-  • Trades, injuries, signings announced after roughly 8 PM yesterday
-  • Tonight's game previews (probable pitchers, key matchups)
+LEAD WITH (last 12 hours): last night's game results, overnight breaking news, this morning's beat reports, fresh injuries, today's lineups, tonight's matchups.
 
-TIER 2 — INCLUDE ONLY IF THERE IS A NEW DEVELOPMENT TODAY. 12–24 hours old. If the story broke at 2 PM yesterday and nothing has happened since, DROP IT.
+INCLUDE ONLY IF NEW DEVELOPMENT TODAY (12–24 hours): mid-day news from yesterday only if there's been a fresh quote, follow-up, or related move today.
 
-TIER 3 — REJECT OUTRIGHT:
-  • Anything older than 24 hours with no new development
-  • Mock drafts after the draft has happened
-  • Pre-game predictions for games already played
-  • Preview articles for games whose results we now know
-  • Anything Ryan would have heard on yesterday's show
+REJECT (older than 24 hrs without new development): mock drafts after the draft, predictions for games already played, rumors that have been resolved, anything Ryan would have heard yesterday.
 
 ═══════════════════════════════════════════════════════════════
 SOURCE QUALITY
 ═══════════════════════════════════════════════════════════════
 
-PREFER: ESPN, MLB.com, NBA.com, NHL.com, NFL.com, official team sites (for scores and schedule). NBC Sports Philadelphia, The Philadelphia Inquirer, The Athletic, Crossing Broad (for Philly beat reporting). Action Network, Yahoo Sports (for national news). Named beat writers via their team sections.
+GAME RESULTS / SCORES: ESPN, MLB.com, NBA.com, NHL.com, NFL.com, official team sites
+PHILLY BEAT: NBC Sports Philadelphia, The Philadelphia Inquirer, The Athletic, Crossing Broad
+NATIONAL: ESPN, The Athletic, Action Network, Yahoo Sports
 
-DOWNRANK: aggregator sites that re-publish stories, fan blogs without sourcing, social-media rumor accounts, generic SEO content farms. If you see the same story across many sources, fetch the most authoritative one and drop the duplicates.
+IGNORE aggregator sites, fan blogs without sourcing, social-media rumor accounts, generic SEO content. If the same story appears across many sources, use the most authoritative one.
 
 ═══════════════════════════════════════════════════════════════
-OUTPUT FORMAT — spoken-word podcast script for ElevenReader TTS
+WRITING PHASE — your only visible output
 ═══════════════════════════════════════════════════════════════
+
+Spoken-word podcast script for ElevenReader TTS.
 
 HARD RULES FOR TTS:
-- NO markdown symbols anywhere. No asterisks, pound signs, bullets, numbered lists, brackets, pipes.
+- NO markdown symbols. No asterisks, pound signs, bullets, numbered lists, brackets, pipes.
 - NO section headers. Use spoken transitions: "Alright, let's turn to the Eagles..." "Now over to the Sixers..."
 - Use em-dashes sparingly. Paragraph breaks for bigger pauses.
 - Write numbers the way a human says them. "Nola threw seven shutout innings" not "7 SO IP."
-- Speak in first person. Greet Ryan by name in the open. Sign off warmly in the close.
+- First person. Greet Ryan by name in the open. Sign off warmly in the close.
 - ${TONE}
 
-STRUCTURE — ${LENGTH}. TREAT THE LENGTH TARGET AS A HARD MINIMUM. The word range is not a suggestion — if you are under the minimum, you have not done the job. Expand analysis, add context, draw connections.
+STRUCTURE — ${LENGTH_DESC}. The minimum word count is a HARD FLOOR. If you are under it, you have failed. Expand analysis, context, and detail until you clear it.
 
 Per-segment guidance (for the 30-minute target; scale proportionally for shorter):
-1. COLD OPEN: 60–100 words. ALWAYS lead with last night's biggest Philly result if any Philly team played. Otherwise lead with the biggest fresh Philly storyline. Tier 1 only.
-2. WELCOME: 200–300 words. Greet Ryan, ground the date, preview the top three or four stories.
-3. PHILLIES SEGMENT: 800–1000 words. ALWAYS open with last night's game (if they played) — final score, pitching line, standout performances, key moments. Then today's matchup, fresh injuries, roster moves, standings. If they were off last night, say so explicitly and pivot to current beat reporting and tonight's game preview.
-4. EAGLES SEGMENT: 800–1000 words. Current reporting only. Today's roster moves, this morning's beat reports, rookie development, OTA updates. Never mock drafts or pre-event speculation.
-5. SIXERS SEGMENT: 500–700 words. Open with last night's game if they played — score, performances, takeaways. Then injury reports, front office, trade rumors, current playoff/offseason status.
-6. FLYERS SEGMENT: 500–700 words. Open with last night's game if they played — score, performances. Then prospects, trades, injuries, current status.
-7. AROUND THE LEAGUES: 600–900 words. Brisk quick-hits from NBA, NFL, MLB, NHL. Heavy focus on last night's biggest results across the league. Weave — don't list.
-8. CLOSE: 100–200 words. One reflection connecting the day's threads, warm sign-off to Ryan by name, tease tomorrow.
+1. COLD OPEN (60–100 words): Lead with last night's biggest Philly result if any team played. Otherwise lead with the biggest Tier 1 Philly storyline.
+2. WELCOME (200–300 words): Greet Ryan, ground the date, preview top three or four stories.
+3. PHILLIES SEGMENT (800–1000 words): Open with last night's game if they played — final score, pitching line, standout performances. Then today's matchup, fresh injuries, roster moves, standings. If off, say so and pivot to current beat reporting.
+4. EAGLES SEGMENT (800–1000 words): Current reporting only. Today's roster moves, this morning's beat reports, rookie development, OTAs.
+5. SIXERS SEGMENT (500–700 words): Open with last night's game if they played. Then injuries, front office, trades, current playoff/offseason status.
+6. FLYERS SEGMENT (500–700 words): Open with last night's game if they played. Then prospects, trades, injuries.
+7. AROUND THE LEAGUES (600–900 words): Brisk quick-hits from NBA, NFL, MLB, NHL — heavy on last night's biggest results. Weave, don't list.
+8. CLOSE (100–200 words): One reflection, warm sign-off to Ryan by name, tease tomorrow.
 
-FINAL CHECKS before outputting:
-  (a) Did I report last night's game result for every Philly team that played? If any are missing, go back and verify with web_fetch.
-  (b) Is every story from the last 12–24 hours? Drop anything older.
-  (c) Is my total word count above the minimum target? If not, expand the thinnest segments.
-
-Output ONLY the script. No preamble, no explanations, no list of sources. Start directly with the cold open.`;
+When you are done writing, output the script directly with no surrounding text. Start the response with the cold open's first word.`;
 
 const res = await fetch('https://api.anthropic.com/v1/messages', {
   method: 'POST',
@@ -162,16 +162,12 @@ const res = await fetch('https://api.anthropic.com/v1/messages', {
     'content-type': 'application/json',
     'x-api-key': process.env.ANTHROPIC_API_KEY,
     'anthropic-version': '2023-06-01',
-    'anthropic-beta': 'web-fetch-2025-09-10',
   },
   body: JSON.stringify({
     model: CONFIG.model,
     max_tokens: 32000,
     messages: [{ role: 'user', content: prompt }],
-    tools: [
-      { type: 'web_search_20250305', name: 'web_search', max_uses: 25 },
-      { type: 'web_fetch_20250910',  name: 'web_fetch',  max_uses: 12 },
-    ],
+    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 25 }],
   }),
 });
 
@@ -185,18 +181,26 @@ const script = data.content
   .filter(b => b.type === 'text')
   .map(b => b.text).join('\n\n').trim();
 
-// Diagnostic counters
-const searchCount = (data.content || []).filter(b => b.type === 'server_tool_use' && b.name === 'web_search').length;
-const fetchCount  = (data.content || []).filter(b => b.type === 'server_tool_use' && b.name === 'web_fetch').length;
-
 if (!script) {
   console.error('=== DIAGNOSTIC ===');
   console.error('stop_reason:', data.stop_reason);
   console.error('usage:', JSON.stringify(data.usage));
   console.error('block types:', data.content.map(b => b.type).join(', '));
   console.error('block count:', data.content.length);
-  console.error(`searches=${searchCount}, fetches=${fetchCount}`);
   throw new Error(`Empty script. stop_reason=${data.stop_reason}. See diagnostic above.`);
+}
+
+// Length safety net — fail loud if the script is suspiciously short.
+// This catches cases where the model narrated its plan instead of writing the show.
+const wordCount = script.split(/\s+/).length;
+if (wordCount < MIN_WORDS) {
+  console.error('=== SHORT SCRIPT DIAGNOSTIC ===');
+  console.error(`Got ${wordCount} words, expected at least ${MIN_WORDS}.`);
+  console.error('stop_reason:', data.stop_reason);
+  console.error('usage:', JSON.stringify(data.usage));
+  console.error('First 500 chars of output:');
+  console.error(script.slice(0, 500));
+  throw new Error(`Script too short: ${wordCount} words (minimum ${MIN_WORDS}). The model likely narrated instead of writing the full show. Build failed so the missed-run alert will fire.`);
 }
 
 const header =
@@ -205,4 +209,4 @@ const header =
 
 await fs.mkdir('episodes', { recursive: true });
 await fs.writeFile(`episodes/${date}.txt`, header + script);
-console.log(`Wrote episodes/${date}.txt — ${script.split(/\s+/).length} words, ${searchCount} searches, ${fetchCount} fetches, model=${CONFIG.model}`);
+console.log(`Wrote episodes/${date}.txt (${wordCount} words, model=${CONFIG.model})`);
