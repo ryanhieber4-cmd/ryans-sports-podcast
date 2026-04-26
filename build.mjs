@@ -29,7 +29,6 @@ const LENGTH_DESC = {
   long:   'a thirty-minute show, minimum 4200 words and ideally 4500',
 }[CONFIG.length];
 
-// Minimum word count — if output is below 50% of this, fail the build loudly
 const MIN_WORDS = {
   short: 700,
   medium: 1400,
@@ -45,23 +44,49 @@ const TONE = {
 const prompt = `You are a sports podcast host producing today's daily show for Ryan, a Philadelphia sports fan.
 
 ═══════════════════════════════════════════════════════════════
-SILENCE RULE — READ THIS FIRST. THIS IS THE MOST IMPORTANT INSTRUCTION.
+SILENCE RULE — READ THIS FIRST
 ═══════════════════════════════════════════════════════════════
 
-You will conduct extensive research using the web_search tool. During that research, you MUST NOT produce any visible text output.
+Your ENTIRE response is the podcast script. From your very first character to your very last character, the only thing you are producing is the words a host would speak on air.
 
-Your ONLY text output for this entire response is the final podcast script — from cold open through close. Nothing else exists.
+There is no other text. None. Not before, not between searches, not before writing, not after writing.
 
-DO NOT, under any circumstances:
-- Narrate what you are about to search for ("Let me search for...", "Now I'll look up...")
-- Summarize what you have found so far ("Looking at the scoreboard data...", "I can see that...")
-- Output a checklist, plan, status report, or research notes
-- Write preamble like "Here is your podcast" or "Now I'll write the script"
-- Confirm the user's request or acknowledge the task
+ABSOLUTELY FORBIDDEN — do not output ANY of these, ever:
+- "Let me search for..." / "Now I'll look up..." / "I'll check..."
+- "Looking at the data..." / "Based on what I found..." / "I can see that..."
+- "I have key facts." / "I have enough info." / "I have abundant material."
+- "Now writing the script." / "Now I'll write..." / "Time to write the show."
+- Status updates between search batches ("Got the Phillies. Moving to Eagles.")
+- Checklists, plans, summaries of what you've done so far
+- "Here is the script:" / "Below is your podcast:"
 
-If you catch yourself typing "Let me..." or "Looking at..." or "I'll now..." or "Based on..." — STOP. Just call the next search tool silently, or begin writing the cold open. There is no in-between text.
+If your first word is anything other than the first word of the cold open, you have failed.
 
-Run searches. Read results. Then write the script. That is your entire output.
+The verification of last night's games happens via tool calls only. The model that runs this code in the GitHub Action saves your text output verbatim into a file that gets emailed to the user. ANY narration you emit ends up in his audio podcast and breaks the show. Stay silent. Search. Write. End.
+
+═══════════════════════════════════════════════════════════════
+PARAPHRASE-ONLY RULE — never quote source text
+═══════════════════════════════════════════════════════════════
+
+You will read articles, box scores, beat reports, and social posts in your search results. NEVER copy their text into your script. You are a host speaking to a listener — write everything in your own words, in spoken English.
+
+NEVER include in your script any of these formatting artifacts pulled from sources:
+- Lists with bullet separators ("· Eagles · Flyers · Sixers · Phillies · Fantasy Football")
+- Date stamps from articles ("April 26, 2026 · By Jimmy Kempski PhillyVoice Staff")
+- Social media handles or post citations ("— Nathan Ackerman (@NathanAckerman_) April 26, 2026")
+- Headlines or article slugs ("PHI@PIT, Gm 2: Vladar makes 27 saves...")
+- Hashtags, emoji, or "#Eagles" / "#Phillies" tags
+- Twitter / X repetitions where the same sentence appears twice in a row (transcripts often do this — fix it before speaking)
+- Promotional fragments ("Read More", "Watch Highlights", "Subscribe to The Athletic")
+- Box score abbreviations or stat tables in raw form
+
+If you find yourself about to write something that looks copy-pasted, REWRITE it as a single conversational sentence in your own voice. "The Phillies beat the Braves 8-5" is fine. Pasting the box-score header is not.
+
+═══════════════════════════════════════════════════════════════
+CONFLICT RESOLUTION — fix it silently, don't show your work
+═══════════════════════════════════════════════════════════════
+
+When two sources disagree on a fact (different scores, different stat lines, different injury details), pick the most authoritative source (ESPN, MLB.com, NBA.com, NHL.com, official team) and use that number. Do NOT write paragraphs in the script trying to figure out which one is right ("The first quote says X, the second says Y, my read is..."). The listener doesn't care about your reconciliation — they care about the right answer. Resolve, then state.
 
 ═══════════════════════════════════════════════════════════════
 DATE CONTEXT
@@ -91,7 +116,7 @@ If a scoreboard search does not clearly show a Philly team's result, run a follo
   • "Phillies vs [opponent] ${monthDayYesterday} final score"
   • "[Team] ${monthDayYesterday} recap" or "[Team] box score ${monthDayYesterday}"
 
-Continue searching silently until each Philly team's status is definitively known. A vague article is not confirmation — you need an actual final score or confirmation of no game scheduled.
+Continue searching silently until each Philly team's status is definitively known.
 
 Then run these deep-dive searches (still silent):
 
@@ -104,7 +129,7 @@ Then run these deep-dive searches (still silent):
 10. "MLB last night recap"
 11. "NHL last night recap"
 
-Beat-writer follow-ups when needed: Matt Gelb (Phillies), Jimmy Kempski / Zach Berman (Eagles), Kyle Neubeck (Sixers), Charlie O'Connor (Flyers). Or "Inquirer [team]", "NBC Sports Philly [team]", "The Athletic [team]".
+Beat-writer follow-ups when needed: Matt Gelb (Phillies), Jimmy Kempski / Zach Berman (Eagles), Kyle Neubeck (Sixers), Charlie O'Connor (Flyers).
 
 ═══════════════════════════════════════════════════════════════
 FRESHNESS DOCTRINE
@@ -114,9 +139,9 @@ Ryan listened to yesterday's episode. Re-reporting yesterday's news is failure.
 
 LEAD WITH (last 12 hours): last night's game results, overnight breaking news, this morning's beat reports, fresh injuries, today's lineups, tonight's matchups.
 
-INCLUDE ONLY IF NEW DEVELOPMENT TODAY (12–24 hours): mid-day news from yesterday only if there's been a fresh quote, follow-up, or related move today.
+INCLUDE ONLY IF NEW DEVELOPMENT TODAY (12–24 hours): mid-day news from yesterday only if there's been a fresh quote or follow-up today.
 
-REJECT (older than 24 hrs without new development): mock drafts after the draft, predictions for games already played, rumors that have been resolved, anything Ryan would have heard yesterday.
+REJECT (older than 24 hrs without new development): mock drafts after the draft, predictions for games already played, anything Ryan would have heard yesterday.
 
 ═══════════════════════════════════════════════════════════════
 SOURCE QUALITY
@@ -126,7 +151,7 @@ GAME RESULTS / SCORES: ESPN, MLB.com, NBA.com, NHL.com, NFL.com, official team s
 PHILLY BEAT: NBC Sports Philadelphia, The Philadelphia Inquirer, The Athletic, Crossing Broad
 NATIONAL: ESPN, The Athletic, Action Network, Yahoo Sports
 
-IGNORE aggregator sites, fan blogs without sourcing, social-media rumor accounts, generic SEO content. If the same story appears across many sources, use the most authoritative one.
+IGNORE aggregator sites, fan blogs without sourcing, social-media rumor accounts, generic SEO content.
 
 ═══════════════════════════════════════════════════════════════
 WRITING PHASE — your only visible output
@@ -135,26 +160,26 @@ WRITING PHASE — your only visible output
 Spoken-word podcast script for ElevenReader TTS.
 
 HARD RULES FOR TTS:
-- NO markdown symbols. No asterisks, pound signs, bullets, numbered lists, brackets, pipes.
+- NO markdown symbols. No asterisks, pound signs, bullets, numbered lists, brackets, pipes, middle-dots (·).
 - NO section headers. Use spoken transitions: "Alright, let's turn to the Eagles..." "Now over to the Sixers..."
 - Use em-dashes sparingly. Paragraph breaks for bigger pauses.
 - Write numbers the way a human says them. "Nola threw seven shutout innings" not "7 SO IP."
 - First person. Greet Ryan by name in the open. Sign off warmly in the close.
 - ${TONE}
 
-STRUCTURE — ${LENGTH_DESC}. The minimum word count is a HARD FLOOR. If you are under it, you have failed. Expand analysis, context, and detail until you clear it.
+STRUCTURE — ${LENGTH_DESC}. The minimum word count is a HARD FLOOR. If you are under it, expand analysis and context until you clear it.
 
 Per-segment guidance (for the 30-minute target; scale proportionally for shorter):
-1. COLD OPEN (60–100 words): Lead with last night's biggest Philly result if any team played. Otherwise lead with the biggest Tier 1 Philly storyline.
+1. COLD OPEN (60–100 words): Lead with last night's biggest Philly result if any team played. Otherwise lead with the biggest Philly storyline.
 2. WELCOME (200–300 words): Greet Ryan, ground the date, preview top three or four stories.
-3. PHILLIES SEGMENT (800–1000 words): Open with last night's game if they played — final score, pitching line, standout performances. Then today's matchup, fresh injuries, roster moves, standings. If off, say so and pivot to current beat reporting.
+3. PHILLIES SEGMENT (800–1000 words): Open with last night's game if they played — final score, pitching line, standout performances. Then today's matchup, fresh injuries, roster moves, standings.
 4. EAGLES SEGMENT (800–1000 words): Current reporting only. Today's roster moves, this morning's beat reports, rookie development, OTAs.
-5. SIXERS SEGMENT (500–700 words): Open with last night's game if they played. Then injuries, front office, trades, current playoff/offseason status.
+5. SIXERS SEGMENT (500–700 words): Open with last night's game if they played. Then injuries, front office, trades, current status.
 6. FLYERS SEGMENT (500–700 words): Open with last night's game if they played. Then prospects, trades, injuries.
 7. AROUND THE LEAGUES (600–900 words): Brisk quick-hits from NBA, NFL, MLB, NHL — heavy on last night's biggest results. Weave, don't list.
 8. CLOSE (100–200 words): One reflection, warm sign-off to Ryan by name, tease tomorrow.
 
-When you are done writing, output the script directly with no surrounding text. Start the response with the cold open's first word.`;
+Start the response with the cold open's first word. End the response with the close's last word. Nothing else.`;
 
 const res = await fetch('https://api.anthropic.com/v1/messages', {
   method: 'POST',
@@ -177,7 +202,7 @@ if (!res.ok) {
 }
 
 const data = await res.json();
-const script = data.content
+let script = data.content
   .filter(b => b.type === 'text')
   .map(b => b.text).join('\n\n').trim();
 
@@ -190,8 +215,45 @@ if (!script) {
   throw new Error(`Empty script. stop_reason=${data.stop_reason}. See diagnostic above.`);
 }
 
-// Length safety net — fail loud if the script is suspiciously short.
-// This catches cases where the model narrated its plan instead of writing the show.
+// ─── POST-PROCESSING: strip narration and source artifacts ───
+// Belt-and-suspenders backup for the prompt rules. If anything leaks through,
+// these regexes catch the most common offenders before the file gets emailed.
+
+const STRIP_PATTERNS = [
+  // Narration / status updates at start of paragraphs
+  /^\s*(I have (?:key facts|enough info|abundant material|the data)\.?.*?)$/gim,
+  /^\s*(Now (?:writing|I'?ll write|I will write).*?)$/gim,
+  /^\s*(Let me (?:search|look up|check|find|gather|confirm).*?)$/gim,
+  /^\s*(Looking at (?:the|my) (?:data|results|searches|findings).*?)$/gim,
+  /^\s*(Based on (?:my|the) (?:research|findings|searches).*?)$/gim,
+  /^\s*(Time to write.*?)$/gim,
+  /^\s*(Got (?:the|a) .{1,30}\.\s*(?:Moving|Now|Next).*?)$/gim,
+
+  // Social media citation tails
+  /—\s*[A-Z][a-zA-Z]*\s+[A-Z][a-zA-Z]*\s*\(@\w+\)\s+[A-Z][a-z]+\s+\d+,\s+\d{4}/g,
+
+  // Bullet-separator garbage runs (Eagles · Flyers · Sixers · ...)
+  /(?:\b\w+\b\s*·\s*){3,}\b\w+\b/g,
+];
+
+let stripped = 0;
+for (const pat of STRIP_PATTERNS) {
+  const before = script.length;
+  script = script.replace(pat, '');
+  if (script.length !== before) stripped++;
+}
+
+// Final cleanup: middle-dot characters never belong in spoken text
+script = script.replace(/\s*·\s*/g, ' ');
+// Collapse blank lines and excess whitespace created by stripping
+script = script.replace(/[ \t]{2,}/g, ' ');
+script = script.replace(/\n{3,}/g, '\n\n').trim();
+
+if (stripped > 0) {
+  console.log(`Post-processing stripped artifacts in ${stripped} pattern groups.`);
+}
+
+// ─── LENGTH SAFETY NET ───
 const wordCount = script.split(/\s+/).length;
 if (wordCount < MIN_WORDS) {
   console.error('=== SHORT SCRIPT DIAGNOSTIC ===');
@@ -200,7 +262,7 @@ if (wordCount < MIN_WORDS) {
   console.error('usage:', JSON.stringify(data.usage));
   console.error('First 500 chars of output:');
   console.error(script.slice(0, 500));
-  throw new Error(`Script too short: ${wordCount} words (minimum ${MIN_WORDS}). The model likely narrated instead of writing the full show. Build failed so the missed-run alert will fire.`);
+  throw new Error(`Script too short: ${wordCount} words (minimum ${MIN_WORDS}). Build failed so the missed-run alert will fire.`);
 }
 
 const header =
