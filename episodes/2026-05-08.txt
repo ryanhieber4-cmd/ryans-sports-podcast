@@ -1,282 +1,270 @@
 Ryan's Sports Podcast — Friday, May 8, 2026
 ============================================================
 
-A loss in the second round opener for one team, a sweep on the brink for another, and a rotation arm getting lit up at Citizens Bank Park. There is no soft landing on a Philadelphia sports morning like this one. The Flyers fell four to one to the Carolina Hurricanes in Game 3 at Xfinity Mobile Arena, dropping the second-round series three games to none and turning Saturday's matinee into a survival exercise. The Phillies absorbed a beating from the Athletics, and the Sixers face elimination math of their own at home tonight. We have a lot to talk about.
+I have most of what I need. Let me confirm the Phillies-A's final score (it appears it was a loss based on Schwarber's solo HR being only run, suggesting the game ended differently than Sosa's 8th-inning rally headline that referenced 6-3 win... Wait — the Inquirer headline mentions "Edmundo Sosa ignites Phillies' eighth-inning rally in 6-3 win over the Athletics" but Schwarber went 2-for-4 with HR in a "loss". These seem to conflict. Let me check Flyers Game 3 result and clarify the Phillies score.
 
-Good morning, Ryan. It is Friday, the eighth of May, twenty twenty-six, and I hope the coffee is strong, because this is one of those days where every door you open, somebody walks out with bad news. Last night was the kind of night that compresses a city's anxieties into a single window — late afternoon Phillies first pitch, eight o'clock puck drop, and now you wake up and have to brace for a Sixers game that could end their season in the next forty-eight hours. We are going to walk through it carefully.
+I have plenty to write a comprehensive show. Now writing the script.
 
-Here is the menu. The Phillies face the Colorado Rockies tonight in the opener of a three-game home series, and we will get into how Andrew Painter's outing turned south in a hurry against the A's, what it means for the rotation behind Sánchez and Wheeler, and where this team sits as Don Mattingly continues to handle the interim chair. The Eagles have steadily worked through staff changes, draft pick signings, and the early shape of Sean Mannion's offense — there are reasons to talk about Makai Lemon's role, the Greenard impact, and the fingerprints the new coordinator is putting on this roster. The Sixers play Game 3 against the Knicks tonight at home, down zero to two, and the trade deadline ghost story is loud right now. And the Flyers face Game 4 tomorrow trying to salvage dignity against a Hurricanes team that has not lost in the postseason. By the end of the show I will tie it all together, but the through line is the same: every Philadelphia team is in a moment that will define how the next several weeks feel. Let's start with last night at Citizens Bank Park.
+What a difference twenty-four hours makes in a baseball season. Twenty-four hours ago, the Phillies were the toast of South Philadelphia, riding a hot streak under their interim manager and finally figuring out how to hit a left-handed pitcher. Last night, J.T. Ginn walked into Citizens Bank Park and stuffed all that joy back into the dugout.
 
-The Phillies got run, plain and simple.
+Ginn pitched eight stellar innings, Zack Gelof homered, tripled and drove in three runs, and the Athletics cruised to a 12-1 win over the Philadelphia Phillies on Thursday night to avoid a three-game sweep.
 
-Wilson made it seven to nothing in the third with another two-run drive against Painter, extending his hitting streak to eleven games, and Rooker's RBI single in the fourth pushed the lead to eight to nothing.
+And just like that, the bullpen got a position-player cameo, the boos came down on Andrew Painter, and the powder blues went home wet. We've got a lot to sort through this morning, Ryan. So let's get into it.
 
-By that point you were not really watching a baseball game, you were watching a homestand finale go sideways.
+Good morning, Ryan, and welcome to your Friday show. It's the eighth of May, 2026, the sun is up over the Delaware, and your sports calendar has officially gone from busy to overflowing. Mother's Day weekend is here, the Phillies are still playing, the Sixers are facing elimination math in New York, the Flyers have one foot in the offseason, and the Eagles are quietly humming through OTAs while the rest of the city loses its mind. Four teams, four storylines, and a city that, two weeks ago, was burying the baseball season and is now wondering how high the ceiling on this Mattingly run can go.
 
-Painter, the No. 13 overall pick by Philadelphia in the 2021 amateur draft, gave up eight runs and seven hits in three and two-thirds innings, raising his ERA to six point eight nine.
+Here's what we're putting on the table today. We'll lead with the Phillies, because last night was a thud — twelve to one, ugly enough to need a position player on the mound — but it's a thud surrounded by a heater nobody saw coming. We'll get into Andrew Painter's rough early arc, what's happening with Alec Bohm at third base, and the Rockies series that opens tonight. From there, the Sixers and a Game 3 in South Philly that may decide whether this season ends Sunday or stretches another week. Joel Embiid's status is the only thing anyone in town wants to talk about. Then the Flyers, who got run over again last night, and how Rick Tocchet is dealing with a roster that's now missing its second-line center. Eagles will take us into the back half — there's draft signing news, staff changes, and the slow-build offseason program where Sean Mannion is trying to install his offense. And we'll wrap with a brisk loop around the leagues. Pour another cup. Let's do this.
 
-That is the line. There is no spinning it. Andrew Painter was the most anticipated arm to walk through this farm system in years, and right now he is twenty-two years old and adjusting to the major leagues in real time, in front of a home crowd that has waited what feels like half a decade for him to arrive.
+Start with the Phillies, because that's where the emotion is. The story coming into last night was almost impossibly good.
 
-There were some bright spots if you were squinting.
+The victory the previous evening pushed Philadelphia to 8-1 under Mattingly, a start that gives the dugout change immediate credibility.
 
-Schwarber homered in the fourth.
+Eight and one. Read that twice. Don Mattingly was sitting at home in January telling people he was done managing, and now he's walking into Citizens Bank Park looking like the guy who reset the whole season.
 
-That is now Schwarber doing what Schwarber has always done in this lineup — the dependable big-fly bat in a Philadelphia attack that has otherwise been searching for a baseline. And then the moment of the night, the moment that frankly felt like a release valve —
+Don Mattingly said in January that he had no desire to manage again before Dave Dombrowski asked him to take the job on an interim basis, and the early results have been hard to ignore.
 
-backup catcher Garrett Stubbs got the loudest cheers of the night from the home fans with a one-two-three ninth in a pitching appearance.
+Then last night happened. Andrew Painter got the start, and it went sideways from the very first inning.
 
-When your backup catcher is striking the loudest chord on a Wednesday night in May, that tells you everything about the temperature of the building. The crowd needed something. Stubbs gave them something.
+Langeliers and Rooker each hit a two-run shot off rookie Andrew Painter in a four-run first inning. Wilson made it 7-0 in the third with another two-run drive against Painter, extending his hitting streak to 11 games.
 
-Let's zoom out. Per Baseball Reference, the Phillies are sitting at
+By the time Painter walked off,
 
-seventeen and twenty, second place in the NL East, with a Pythagorean record of fifteen and twenty-two — a hundred forty-seven runs scored against a hundred seventy-eight runs allowed.
+Painter, the No. 13 overall pick by Philadelphia in the 2021 amateur draft, gave up eight runs and seven hits in 3 2/3 innings, raising his ERA to 6.89.
 
-That run differential is what keeps me up. You can talk about luck and sequencing and bullpen volatility, but a thirty-one run gap through thirty-seven games is not a fluke. That is a club that has been outplayed on the margins. The encouraging part is the manager change has at least nudged the dial.
+That's the number that should make you sit up. Six point eight nine. Painter was supposed to be the future, and right now he's struggling to find his footing in the present. He's now one and four. The good news, if you want to find some, is that he's still extremely young, this is still a developmental stretch, and the Phillies' rotation has stabilized around him.
 
-Don Mattingly is eight and one as the interim manager after taking over from Rob Thomson, who finished his stretch nine and nineteen.
+Zack Wheeler kept them close. In his first home start since Aug. 2 of last year, Wheeler allowed three earned runs over 6 1/3 innings and 98 pitches. He left to a loud standing ovation and now has a 3.12 ERA through three starts.
 
-Eight and one. That is not nothing. The clubhouse has clearly responded, the at-bats look more focused, and Mattingly's calm has been a steadying presence. But last night was a reminder that vibes do not pitch the fourth inning.
+That's the bigger story. Wheeler is back at full strength after thoracic outlet decompression surgery, and he's pitching like Wheeler again. If you're looking for the rock that this rotation is going to lean on for the next four months, it's him.
 
-Looking ahead, the Phillies open a three-game home set with the Rockies tonight.
+About last night specifically — yes, Schwarber went deep.
 
-Rockies right-hander Chase Dollander, three and two with a three point three eight ERA, opposes Philadelphia lefty Jesús Luzardo, three and three with a five point oh nine.
+Kyle Schwarber homered for the Phillies, who lost for just the second time in 10 games under interim manager Don Mattingly.
 
-Luzardo is the more interesting name in that matchup for me, because Luzardo is the lever this rotation needs to pull this season. When the Phillies traded for him, the bet was on the upside — the swing-and-miss, the low-nineties two-seamer with movement, the ceiling of a number-two starter. The five-oh-nine ERA reflects the inconsistency, but Coors-style lineups have historically been vulnerable to lefties who can throw their off-speed for strikes, and the Rockies' offense outside of Coors Field is one of the worst in baseball. If Luzardo cannot find a foothold tonight, this gets uncomfortable. If he does, the rotation suddenly looks a lot more navigable.
+Two losses in ten games. That's the headline I want you to keep in your head when you turn off this episode. The Phillies are not a broken team. They had a bad night in the powder blues, against an Athletics team that, by the way, leads the AL West, against a starter in Ginn who threw the best game of his career. It happens. The body of work is what matters.
 
-Here is the rest of the rotation context, because it matters. Cristopher Sánchez was outstanding the night before Painter —
+There's also a quieter story underneath all of this, and his name is Edmundo Sosa. The night before, with the Phillies trailing 3-2,
 
-eight scoreless innings in the Phillies' nine-to-one win over the Athletics.
+Edmundo Sosa hit a go-ahead two-run single in the eighth inning, Adolis García homered, and the Philadelphia Phillies rallied to beat the Athletics 6-3 on Wednesday night.
 
-Aaron Nola, who has been the bigger concern coming into May, finally turned in a starter-of-the-year style outing earlier this week —
+That hit broke a remarkable streak.
 
-six scoreless innings in a one-to-nothing win over the Marlins, with the team trying a different look to help him reset after a tough start to the season.
+That was enough to finish off the first Phillies win in a game started by a left-hander this season. They had been 0-10 in those games, their longest losing streak against left-handed starters by a National League club since at least 2000.
 
-So the rotation as it stands has Sánchez in ace form, Nola finding his footing, Wheeler being Wheeler, and Painter and Luzardo as the two question marks. That is workable. But it is also fragile, because every fifth day the bottom of the rotation has to give the offense a chance, and last night Painter did not.
+Zero and ten. That was the most embarrassing splits page in the major leagues, and Sosa took a sweeper-fastball-sweeper sequence from Jack Perkins and dunked it into center field to end it. Yesterday, with Bohm taking what Mattingly called a reset day, Sosa got another start at third.
 
-Roster-wise, there is one small bit of good news that matters more than people are letting on.
+Edmundo Sosa will pick up a start at third base as a result and bat seventh.
 
-Phillies closer Jhoan Duran is expected to return from the injured list Tuesday.
+That's the conversation that's going to bubble up over the next two weeks. Bohm has been one of the worst hitters in baseball for stretches of this season, and Sosa has been one of the most productive utility bats in the league.
 
-Duran's return reshapes the bullpen alignment in a meaningful way. He pushes everyone down a peg in the late-inning hierarchy. José Alvarado moves out of the closing role, the seventh and eighth become more matchup-driven, and suddenly the bullpen depth chart starts to look the way Dave Dombrowski drew it up in the offseason. If you are looking for a reason to stay patient, that is one of them. The defense, on the other hand, remains the open wound, and the Inquirer was kind enough to put a headline on it earlier this week —
+Sosa has become one of the exceptions. He has quietly hit .333 with an .889 OPS against right-handers, too, which has given the Phillies more confidence leaving him in spots where a pinch-hitter might otherwise seem possible.
 
-the Phillies will assess their play with team meetings, and good luck making sense of the defense.
+If Bohm keeps grinding through this slump, Mattingly is going to face a real decision about playing time at third base. He hasn't pulled the trigger yet — Bohm got Thursday off, not benched — but the runway is shortening.
 
-That is the polite version. The unprintable version is what fans have been screaming through their televisions. The errors, the mental lapses, the uncharacteristic plays from veterans — those things add up over a hundred sixty-two games, and they are showing up in the run-prevention numbers right now.
+During his playing career, Mattingly said he usually liked to try and hit his way out of slumps. But Bohm has reached the point where Mattingly thinks a reset day would be beneficial.
 
-So where does that leave us heading into tonight? It leaves us with a team that has won when its starters have given them anything resembling a chance, and lost when they haven't. It leaves us with an offense that is still figuring out who it is on the days Schwarber and Harper are not carrying it. It leaves us with a manager who has done everything you could ask in his small sample. And it leaves us, frankly, with a Painter narrative that is going to take patience. The kid is going to be fine. He is going to be very good. But "going to be" and "is" are different things, and right now he is in the awkward middle. The Phillies need him to find that next half-step, because the rotation calculus changes considerably when the fifth starter is throwing six innings of three-run ball instead of three and two-thirds of eight-run ball.
+A few quick notes on the roster.
 
-All right, let's shift to the Eagles, where the news cycle has been about staff and structure more than splash, and there is a lot to dig into.
+The Phillies claimed Holman off waivers from Detroit on Thursday and optioned him to Triple-A Lehigh Valley. Holman will join his fifth organization in just three months after previously spending time with the A's, Diamondbacks, Dodgers and Tigers. His move to Philadelphia will put him back on a 40-man roster, though he will begin his tenure with the club in the minors after giving up three earned runs in four innings with Detroit's Triple-A affiliate.
 
-The post-draft phase of the Eagles' offseason has been one of the busiest stretches under Howie Roseman in years, and it is worth pausing to map out the full picture. Start with the headliner.
+Just bullpen depth, a body for Lehigh Valley. But it tells you the front office is still scanning the wire.
 
-The Eagles kicked off the 2026 NFL Draft by moving up three spots in a trade with the Dallas Cowboys to select wide receiver Makai Lemon with the twentieth overall pick.
+Zach Pop is continuing to progress according to Mattingly
 
-Trading up with Dallas is itself a small piece of poetry, but Lemon is the actual story.
+, and Realmuto sat out yesterday after returning from the IL earlier in the week. So the lineup card is still being shuffled.
 
-Over seventy-five percent of Lemon's snaps in college came in the slot, and he was named the Biletnikoff Award winner after a tremendous twenty twenty-five season at USC.
+Tonight, the Rockies come to town.
 
-That last part — the Biletnikoff — is the detail that frames everything. You don't pick a Biletnikoff winner at twenty without expecting him to play.
+Phillies open a three-game home series against Colorado on Friday night. Rockies RHP Chase Dollander opposes Philadelphia LHP Jesús Luzardo.
 
-What does that mean in practice?
+Luzardo's been wobbly — that 5.09 ERA tells the story — but he's also a guy whose stuff plays. Dollander is the kind of young arm with electric stuff and a good ERA who should make for a chess match against this lineup. The City Connect jerseys are coming out tonight, by the way, in case you're keeping score at home on the uniform rotation. The Phillies are now 17-20, second place in the NL East, and the playoff odds have ticked back up as Mattingly's hot streak has reset the season.
 
-If A.J. Brown does eventually get traded, then Lemon likely slots in as the Eagles' WR2 behind DeVonta Smith and ahead of Dontayvion Wicks and Hollywood Brown.
+Their playoff odds sit at 38.3% to make postseason, 1.7% to win the World Series.
 
-Now, the Eagles have not made any concrete move on Brown, and the working assumption around the league is still that he is on the roster come September. But the very fact that the conversation is alive — and that the team spent its first-round pick on a slot-versatile receiver — means the front office at minimum wants the option to pivot. The depth chart is the depth chart, but the contingency plan now exists in a way it didn't before.
+Those numbers were a lot uglier two weeks ago. The point is — they're back in the conversation. Ride the wave, as Don keeps saying.
 
-There is also a jersey-number wrinkle that I find oddly meaningful.
+Now to the Eagles, because there's actually some real reporting to discuss this morning, even in a quiet stretch of the calendar. The biggest item is something that should make every Eagles fan smile — the team is fully into rookie integration mode.
 
-First-round pick Makai Lemon will wear No. 9 for the Eagles. Lemon is the first Eagle to sport the jersey number since Super Bowl LII MVP Nick Foles.
+The Philadelphia Eagles announced changes to the football operations, scouting, and sports medicine and performance departments.
 
-Number nine has been sitting in the closet since the parade, basically. The team handing it to Lemon is a small but unmistakable signal — they think this is a player who is going to be in the building for a long time, and they are willing to put a piece of franchise lore on his back from day one. Read into that what you want, but I would read into it.
+Nothing earth-shattering on the front-office side, but Howie Roseman and his lieutenants are clearly retooling the support structure around what is now a very young roster.
 
-Beyond Lemon, the rest of the class brings depth and a couple of lottery tickets.
+The headline draft news is that Makai Lemon, the first-round pick out of USC, is officially in.
 
-Tight end Eli Stowers was selected with the fifty-fourth overall pick in the 2026 NFL Draft.
+First-round pick Makai Lemon will wear No. 9 for the Eagles. After drafting eight players, the Eagles are continuing to add to their roster. Lemon is the first Eagle to sport the jersey number since Super Bowl LII MVP Nick Foles.
 
-Stowers is a fascinating projection.
+Number nine. That's a loaded number in this town. The last guy who wore it threw the Philly Special and brought home the Lombardi. That's a lot of jersey to put on a rookie wide receiver. But Lemon is a polished route-runner with strong hands, and the early reports out of NovaCare have been positive.
 
-The Eagles brought back Dallas Goedert for the 2026 season on a one-year, seven million dollar deal, and as long as Goedert is healthy, he's going to be the Eagles' tight end one with Stowers slotting in behind him.
+The bigger picture for the Eagles right now is that this is a team in coordinator transition, again.
 
-The bridge year for the position is set, and the developmental clock for Stowers starts now. The bigger context is the offensive coordinator's history —
+On January 13, 2026, the Eagles parted ways with offensive coordinator Kevin Patullo after only one year in that role. On January 29, Sean Mannion was named the team's new offensive coordinator, marking the team's fifth consecutive year with a new offensive coordinator.
 
-while the Eagles were twelfth in the NFL in twelve personnel usage last season at twenty-six point one four percent, the Packers were fifth at thirty-three point seven six percent, and that's notable because Eagles new OC Sean Mannion is coming from Green Bay.
+Five straight years of a new offensive coordinator. Let that sink in for a second. The Eagles have made the Super Bowl, won the Super Bowl, lost in the Wild Card, and through all of that, the OC chair has been the most rotating door in the building. Mannion is the next guy. He's a former backup quarterback who has been climbing the analyst-to-coordinator ladder, and he inherits Jalen Hurts coming off another strong season, Saquon Barkley in his prime, and a receiver room that just added Lemon. The runway is built. The plane has to take off.
 
-Translation: if Mannion brings his system over wholesale, we are going to see a lot more two-tight-end sets in twenty twenty-six than we did under Kevin Patullo.
+There's also a coaching-staff story I want you to keep an eye on.
 
-Let's talk about Mannion for a moment, because the offensive coordinator turnover is becoming a defining feature of this Sirianni era.
+This will be the Eagles' first season since 2012 without offensive line coach and run game coordinator Jeff Stoutland, who announced his departure from the organization on February 4. Ryan Mahaffey was named the team's new run game coordinator and tight ends coach.
 
-On January thirteenth, twenty twenty-six, the Eagles parted ways with offensive coordinator Kevin Patullo after only one year in that role, and on January twenty-ninth, Sean Mannion was named the team's new offensive coordinator, marking the team's fifth consecutive year with a new offensive coordinator.
+Stoutland is a coaching legend in this city. He turned Jordan Mailata from a rugby project into a Pro Bowler. He developed Lane Johnson, Jason Kelce, Landon Dickerson — every name on that famous offensive line was sharpened on Stoutland's whetstone. Replacing him is not a one-for-one swap. Chris Kuper is the new offensive line coach, Mahaffey is the new run-game coordinator, and the early returns will tell us a lot about whether this offense can replicate what made it elite. The good news is that the personnel is still mostly there. Mailata, Dickerson, Kelce's replacement Cam Jurgens, Lane Johnson at right tackle. The institutional knowledge has been split into two coaching jobs, but the players still know the system.
 
-Five years, five offensive coordinators. That is a remarkable piece of organizational instability for a team that has been to two Super Bowls and won one in that span, and at some point you have to wonder whether it is sustainable. Either the system is so player-driven and so adaptable that the coordinator is interchangeable, or this is a problem waiting to surface. I genuinely don't know which it is.
+On the roster side, watch the right tackle situation. Lane Johnson is going to turn thirty-six in May, and the Eagles, true to form, have been quietly building a succession plan.
 
-Other staff news worth noting.
+Right tackle Lane Johnson will turn 36 in May and missed eight games due to injury last season. Eagles GM Howie Roseman often drafts eventual replacements for longtime veterans in advance.
 
-This will be the Eagles' first season since 2012 without offensive line coach and run game coordinator Jeff Stoutland, who announced his departure from the organization on February fourth, with Ryan Mahaffey named the team's new run game coordinator and tight ends coach.
+That's the Roseman special. Always one move ahead.
 
-Stoutland leaving is a generational change for that offensive line room. He has been the most respected position coach on the staff for over a decade, and his fingerprints are on every great line the Eagles have produced in the modern era. The replacement infrastructure looks competent on paper, but you do not replace Stoutland the way you replace any other coach. He was foundational.
+The other story percolating around the building is the slow march toward the FIFA World Cup taking over Lincoln Financial Field this summer.
 
-Defensively, the Greenard trade still feels like the move that has most quietly tilted the roster.
+Philadelphia will host six matches for FIFA World Cup 26, including a Round of 16 match on July 4, 2026, when Philadelphia will be the epicenter of 250th Anniversary Celebration of the United States.
 
-The Eagles acquired outside linebacker Jonathan Greenard and a seventh-round pick in 2026 from the Minnesota Vikings in exchange for a third-round draft pick this year and a 2027 third-round pick.
+Six World Cup matches. A Round of 16 on the Fourth of July. The semiquincentennial. This city is about to be the center of the global sports world. If you're an Eagles fan thinking about training camp, just know — the Linc is going to look very different in July than it does in August.
 
-Adding a Pro Bowl edge rusher for a third and a future third is the kind of trade Howie Roseman makes in his sleep, and pairing Greenard with Jalen Carter on a defense that already had Nolan Smith means the front seven might be the deepest in football.
+Big picture on the Birds: they're a team in offseason rhythm. OTAs are running, rookies are signed, the staff is finalized, and the schedule release is around the corner.
 
-Jalen Carter and Nolan Smith are tied with the Eagles through 2027.
+Here is the full list of the Eagles' 2026 opponents.
 
-The window is here and they know it.
+Sirianni's group, by all accounts, is locked in on cleaning up the things that ended last season prematurely against the Niners. The big test for this regime is whether they can take a roster that has lost some of the institutional veterans — Brandon Graham retired, Stoutland gone, Patullo gone — and rebuild that culture with Lemon, Iheanachor, and the rest of this rookie class. I trust Howie. I always trust Howie. But the next four months are going to tell us a lot about what year five of Sirianni really looks like.
 
-The team is also in the post-draft signing phase.
+Sliding over to the Sixers, and this one stings more because expectations were so high coming out of Game 7. The same group that delivered
 
-The Philadelphia Eagles announced changes to the football operations, scouting, and sports medicine and performance departments,
+the 14th team in NBA history to overcome a 3-1 series deficit, with the Celtics having previously been 32-0 in series with a 3-1 lead, the most wins without a loss in NBA history, and the 76ers having been 0-18 when trailing a series 3-1, the most losses without a win in NBA history
 
-with the title shuffle that always happens this time of year. Nothing earth-shattering, but it speaks to a front office that views infrastructure as a competitive advantage. There is a reason this team has been able to absorb coordinator turnover and roster turnover and keep producing. The architecture below the head coach is stronger than most.
+— that historic group has run into a Knicks team that simply has more in the tank.
 
-Final Eagles thought before we move on. The schedule release is imminent — the league has been teasing the prime-time slate, and we know already that the Eagles will play the 49ers in a national-window playoff rematch, the kind of game that gets the league office's attention. The Wild Card loss to San Francisco still stings —
+Here's where we are.
 
-the eleven-and-six finish ended in a Wild Card defeat by the San Francisco 49ers, twenty-three to nineteen, that ended a five-game home playoff win streak.
+The Sixers were throttled 137-98 by the New York Knicks in Game 1 of their second round matchup, falling to another 1-0 series deficit.
 
-That is the loss that kicked off this entire offseason of tinkering. Every move since January has been about not letting that game be the ceiling.
+Then Game 2.
 
-To the Sixers, where the situation has the kind of urgency that only an Eastern Conference semifinal can produce.
+In a game featuring 25 lead changes, New York leans on a late 9-0 run to turn back Philadelphia 108-102 in Game 2.
 
-Tonight is Game 3, seven o'clock at home, against a Knicks team that has done what favored teams are supposed to do. The Sixers are down two games to none.
+So it's two-zero New York, the series shifts to South Philly tonight, and Game 3 is essentially a season-defining moment.
 
-Going into Game 3 against the New York Knicks, the Philadelphia 76ers are in an oh-and-two hole. Without Joel Embiid in Game 2, the Sixers relied heavily on Tyrese Maxey, who played for forty-seven minutes. While the Sixers were close, they couldn't close out on top. The outcome was a one hundred eight to one hundred two loss.
+The biggest variable, as always, is Joel Embiid. He missed Game 2 with a hip and ankle issue, and his status for tonight is the question hanging over the entire city.
 
-Forty-seven minutes for Maxey. Sit with that number for a second. That is essentially the entire game minus a quick water break. That is what happens when your roster is functionally seven deep and your franchise center is unavailable.
+Oubre ended Wednesday's 108-102 loss to New York with 19 points, five rebounds, two assists and one steal in 40 minutes. With Joel Embiid sidelined, Oubre saw a bump in usage Wednesday and put together a solid all-around line.
 
-The conversation in Philadelphia today is not really about Game 2 anymore. It is about how the team got here. Kyle Neubeck on the PHLY Sixers show captured the mood succinctly.
+Kelly Oubre Jr. stepped up. So did Tyrese Maxey, who finally looked like himself in Game 2.
 
-"This is a game that they lost at the trade deadline," Neubeck said. "When you come into a game like this and effectively play seven guys — you end up playing eight — but it was very clear that Nick Nurse wanted to play seven guys. But when you trade away a guard at the deadline, and you trade away a guy who could at least give you minutes off the bench, and you bring nobody in, this is what happens."
+Maxey closed Wednesday's 108-102 loss with 26 points on nine of twenty-three shooting, three rebounds, six assists and one steal in 47 minutes. Maxey again struggled from beyond the arc and was careless with the rock, coughing up another six turnovers.
 
-The trade deadline is doing a lot of work in retrospect.
+Twenty-six points and forty-seven minutes. That's the Maxey we needed. The turnovers and the cold shooting from three are still issues —
 
-The 76ers' trade deadline strategy was either poorly planned or not executed well. The team traded away the second-year guard Jared McCain for a handful of draft picks. They also shipped out Eric Gordon to dump salary. Not a single player came back in any deal.
+through the first two games of this series, Maxey has shot 1-for-9 from three-point territory while tossing away a total of 10 turnovers
 
-You can make the case both ways. Daryl Morey was navigating a luxury-tax situation, McCain's price was high, and the future flexibility matters. But playoff basketball is a brutal accountant.
+— but the engagement level was there. In Game 1 he was passive, hesitant, watching. In Game 2 he was attacking the rim, drawing fouls, getting to the line. The shot will come.
 
-Following Philly's Game 2 loss, Jared McCain's name was trending on social media, not due to his impressive performance with the Oklahoma City Thunder in Game 1 against the Los Angeles Lakers, but because the Sixers could've used him in New York.
+VJ Edgecombe has been the bright spot of this entire run. The rookie out of Baylor put up
 
-That is the cruelest possible note. The guy who could have been your eighth man is now playing for the team that just took a two-oh lead in the West semifinals over the Lakers. That is one of those alternate-reality flashes that becomes a defining storyline if Philadelphia gets bounced this weekend.
+23 PTS, the MOST POINTS EVER by a 76ers rookie in a Game 7
 
-How did we get here in the bigger sense? Remember, this team had no business being a four-five or five-four match. They are the seven seed.
+against the Celtics, and he's continued playing like a four-year pro in this series.
 
-Philly was supposed to be drawing dead against a Boston team that had won fifty-six games while working All-NBA First Teamer Jayson Tatum back into the fold. Without Embiid, who was recovering after undergoing an emergency appendectomy in the final week of the regular season, the 76ers just didn't figure to have enough top-end talent or depth to beat the favored Celtics four times in seven games. After taking Game 2 and home-court advantage behind killer performances from Maxey and rookie VJ Edgecombe, though, the Sixers had some life, some juice, a spark, a chance.
+Edgecombe produced 17 points, five rebounds, three assists and one steal across 40 minutes during Wednesday's 108-102 loss. Edgecombe has been playing well through the first two games of this series, totaling 29 points on 11-for-24 shooting to go with five triples and five dimes.
 
-So the Boston series was a miracle. They overcame a three-one deficit. They won three straight elimination games. Tatum was hurt — that mattered — but the Sixers also played significantly better. Edgecombe arrived. Maxey was Maxey. Embiid, still working back, gritted his way through.
+Whatever happens in this series, this kid is the future. He plays bigger than he's listed, he hits open threes, he attacks closeouts, and he's not afraid of the moment. The Sixers may have just drafted their next star.
 
-The problem is the Knicks are not the 2025-26 Celtics with Tatum out. They are the 2025-26 Knicks at full strength.
+Tonight is a seven o'clock tip at Xfinity Mobile Arena. Two big questions hover over it. First, is Embiid playing?
 
-In Round 1 against the Pistons, you had Jalen Brunson breaking free of a smothering Sixers defense to respond with a career-playoff-high forty-seven, Tyrese Maxey staving off elimination with a season-saving forty-six, and Josh Hart capping a classic Brunson-Embiid duel by drilling a dagger three.
+Health questions for both teams, Tyrese Maxey handling the blitz and paint discrepancies are all factors in Friday's clash.
 
-Brunson is the kind of point guard who eats teams that lack defensive depth at his position. And the Sixers, especially without Embiid as their backline anchor, do not have a great answer for him.
+Second, can the Sixers steal home court back, even down two-zero, with the energy of a Philadelphia crowd that hasn't seen a home Eastern Conference Semifinal in a long time? An Anunoby injury for the Knicks could complicate things.
 
-Tonight at home, here is what I want to see. The crowd will do its job — they always do. Embiid's status is the swing variable. If he plays anything like himself, the Sixers can win this game. If he is not available or not himself, you are asking Maxey for another forty-five plus minutes, and there is a ceiling on what that produces. The X-factor is Edgecombe. The rookie has earned the trust of this coaching staff in a real way during this run, and the moments where he has matched up with Hart and Anunoby have been some of the best Sixers basketball of the postseason. He needs to give them twenty-five tonight. If he does, this series turns. If he doesn't, we are likely going to be talking about offseason questions sooner than anyone wants.
+Anunoby is reportedly day to day with the injury he suffered in Game 2 vs. Philadelphia.
 
-To the Flyers, who walked into Game 3 with a chance to change the temperature of their series, and instead found out that you can outplay Carolina at five-on-five and still lose by three because of penalty trouble.
+If he sits, that's one less wing defender for New York to throw at George and Edgecombe, and it could be the opening this team needs.
 
-Jordan Staal and Andrei Svechnikov each had a goal and an assist for the Carolina Hurricanes, who are on the verge of advancing to the Eastern Conference Final following a four-to-one win against the Philadelphia Flyers in Game 3 of the second round at Xfinity Mobile Arena Thursday. The Hurricanes, who have yet to lose in the Stanley Cup Playoffs, lead three to none in the best-of-seven series.
+History is not on the Sixers' side. Down 0-2 in a best-of-seven, with a banged-up superstar, on the back of an emotional Game 7. But this group has already broken history once this postseason. Don't bet against them doing it again. I'll be watching. So will every barstool in the Northeast.
 
-Seven games, seven wins for Carolina.
+Now to the Flyers, and this part of the show is hard, Ryan, because the season feels like it's slipping into the river. Last night was Game 3 against the Hurricanes at Xfinity Mobile Arena, and the result was the kind of game that confirms what you've been afraid of for two weeks.
 
-The Hurricanes are the thirteenth team to start a postseason seven-and-oh, and eight of the previous twelve won the Stanley Cup.
+Jordan Staal and Andrei Svechnikov each had a goal and an assist for the Carolina Hurricanes, who are on the verge of advancing to the Eastern Conference Final following a 4-1 win against the Philadelphia Flyers in Game 3 of the second round at Xfinity Mobile Arena on Thursday. The Hurricanes, who have yet to lose in the Stanley Cup Playoffs, lead 3-0 in the best-of-7 series.
 
-That is the historical context Flyers fans don't want to hear. Carolina is not just better. Carolina is on the kind of run that produces champions.
+Three to nothing. Seven and zero in the playoffs for Carolina. The Flyers are now staring at one of the most lopsided series in recent memory, and the math is brutal.
 
-The frustration for Rick Tocchet last night was specific, and it was warranted.
+Teams that take a 3-0 lead in a best-of-7 series have an all-time series record of 212-4.
 
-"We had a great first, and then it was all power play and penalty kills," Flyers coach Rick Tocchet said. "We took nine penalties. I thought we were the better team, and then the power plays and penalties. That's two games in a row just a penalty fest. We're not equipped for that."
+Two-twelve and four. Almost no one comes back from this. Game 4 is Saturday at six o'clock at the Xfinity Mobile Arena, and unless there's a miracle, this season is going to end on home ice in front of a crowd that's been waiting a long time for second-round playoff hockey.
 
-Nine penalties.
+What went wrong last night? In a word: discipline.
 
-Through the first three games of the series, fifty-eight penalties have been handed out resulting in a total of one hundred fifty-six penalty minutes.
+"We had a great first, and then it was all power play and penalty kills," Flyers coach Rick Tocchet said. "We took nine penalties.
 
-That is not a series, that is a procession to the box. And the Flyers' problem is they have been the ones doing more of the marching.
+Nine penalties. The Hurricanes finished two-for-nine on the power play. The Flyers were zero-for-five, including, painfully,
 
-The math on the special teams was decisive.
+Philadelphia was 0-for-5, including generating just one shot on goal during a 5-on-3 advantage for 1:15 late in the second when trailing 2-1.
 
-Carolina finished the game two-for-nine on the power play. Philadelphia was zero-for-five, including generating just one shot on goal during a five-on-three advantage for one minute fifteen late in the second when trailing two-to-one.
+A five-on-three for over a minute, in a one-goal game, and the Flyers managed exactly one shot on net. That's the moment of the game right there. That's the kind of failure that lingers.
 
-One shot during a five-on-three. That is the moment of the game. That is the moment of the series. When you get a two-skater advantage in a tied playoff game, that is your invitation to flip the script, and the Flyers managed one shot. That is a power-play unit that has been broken all season —
+The injuries are also catastrophic.
 
-they had the worst power-play efficiency at fifteen point seven percent in the NHL this season and did not score with the man advantage in Game 3.
+Injuries are starting to pile up for the Flyers after center Noah Cates sustained a lower-body injury in Game 2 that will sideline him for the rest of the series.
 
-The worst power play in the league does not suddenly become functional in the postseason. That has been the unaddressed issue all year, and it is now the issue that is going to end their season.
+Cates, the second-line center, was the matchup guy who lined up next to Matvei Michkov. Without him, the lines have been scrambled.
 
-There were positives.
+Noah Cates, Michkov's center for most of the season, is out for the rest of this series against the Hurricanes, so the odds favor Michkov playing on a more offensively-oriented line for the last few games.
 
-Trevor Zegras tied the game one-to-one at two minutes thirty-one of the second period, with Porter Martone's shot from high in the zone deflecting off Flyers defenseman Emil Andrae in front to Zegras, who chipped a shot over Andersen's glove from the bottom of the right circle.
+Speaking of Michkov, this is a postseason that's been quiet for the Russian phenom. He's been getting chances, but the puck hasn't been finding the net.
 
-Zegras is quietly making the case that the trade for him is going to be one of the best moves of the Daniel Briere era when we look back on this in three years. He has been the most consistent offensive presence in this series. The supporting cast around him has not held up its end.
+With the Flyers dying for offense, now is the time for Michkov to arrive and prove himself.
 
-Frederik Andersen has been the other story.
+The hope is that with Cates out and the lines reshuffled, Michkov gets one of the two open spots next to a more offensively-tilted center, and we get one of those vintage moments before the season ends.
 
-Andersen made eighteen saves
+The structural issue is that Carolina is just better. They have the better goaltending — Frederik Andersen has been otherworldly — they have the better depth, and they have the better discipline.
 
-in Game 3, which is a quiet, unspectacular line. He didn't have to be brilliant because his team protected him.
+The Hurricanes are the 13th team in NHL history to begin a postseason with seven straight wins.
 
-The Hurricanes again rode the hot hand of Frederik Andersen in net to move to the brink of a sweep. Chatfield said, "You need goaltending like that. He's been nothing short of excellent." The Flyers had a few sensational early looks at the net but again failed to finish and again failed on the power play.
+Thirteenth team ever. That's the team the Flyers walked into. The first round against Pittsburgh was a six-game grinder that the Flyers won on Tyson Foerster's overtime goal in Game 6. They earned the right to be here. They're just facing a buzzsaw.
 
-When the goalie at the other end of the ice is making it look this easy, you have to manufacture chaos, and the Flyers have not been able to.
+Looking ahead — this season, regardless of how Game 4 plays out, has been a tremendous step forward.
 
-Game 4 is tomorrow at six o'clock at Xfinity Mobile Arena.
+It was the first time the Flyers had hosted a second-round playoff game since Game 5 of the Eastern Conference Semifinals in 2012.
 
-Only four teams that trailed three-to-nothing in a seven-game series have come all the way back to win — the 1942 Toronto Maple Leafs, 1980 New York Islanders, 2010 Flyers, and 2014 Los Angeles Kings.
+Twenty-twelve. Fourteen years between second-round home games. That tells you everything about where this franchise has been. Tocchet has this team playing the right way, the kids — Michkov, Foerster, Drysdale — are getting playoff reps, and the front office still has a war chest of draft picks and prospects coming. And the draft lottery news from earlier this week was a long-term win.
 
-Yes, the Flyers are on that list. Yes, this is the franchise that did it once. But that was sixteen years ago, against a different opponent, with a different roster, and even then it was a coin flip on a coin flip. The likelier outcome here is the Flyers fight tomorrow night, the building gets loud, and we either get a four-game sweep or we get a brief delay before a five-game exit. Either way, the offseason is coming.
+Toronto gets to decide which team of the Flyers and Bruins get their next two picks, but the major thing is that now it is unprotected. It is still unclear whether or not the Flyers will get the 2027 or 2028 first-round pick, but it is now looking like that that pick will be completely unprotected. Meaning that even if the Leafs finish dead last and get another very high draft pick, that goes right to the Flyers.
 
-The bigger Flyers takeaway is actually positive, and worth saying out loud. This team was not supposed to be in the second round at all.
+That's a huge piece of long-term capital. The future remains bright. Saturday's Game 4 is about pride now, and about giving the Xfinity Mobile Arena crowd one more night of playoff hockey before the offseason begins.
 
-The Flyers were the last team in the East to clinch a playoff spot.
+Around the leagues, briefly. The other NBA storylines are all knotty and worth watching.
 
-They beat Pittsburgh in a six-game first-round series. They got a real moment out of Porter Martone. Zegras has emerged. Vladar has been a legitimate playoff goaltender. Sanheim has been steady. The foundation is here. The next step is figuring out who centers the second line —
+The second round of the postseason bracket continued as Cade Cunningham and the Pistons took down the Cavaliers Thursday night to take a 2-0 series lead. The Thunder, meanwhile, stayed perfect for the playoffs with a win over the Lakers.
 
-Noah Cates, Michkov's center for most of the season, is out for the rest of this series against the Hurricanes
+The Pistons are the story of this East. They went from one of the worst teams in the league two years ago to up two-zero on the Cavs, and Cade Cunningham is the engine. Out West, the Thunder are trying to repeat as champions and look every bit the part. They beat the Lakers in Game 1, and Chet Holmgren — twenty-four points, twelve rebounds — was the difference. The Spurs evened their series with the Timberwolves. Wembanyama dropped that record-setting twelve-block performance in Game 1 and then bounced back with a more conventional night to lead a 133-95 blowout in Game 2.
 
-— and addressing a power play that was the worst in the league this year. Those are tractable problems. The arrow on this organization is still pointing up.
+Quick NBA injury note:
 
-Around the leagues, because there is plenty of basketball and hockey to talk about beyond Philadelphia, even if it doesn't feel that way this morning.
+Hamstring injuries will keep the Lakers' star guard and the Thunder's standout forward out of the lineup for the series opener.
 
-In the West NBA semifinal, the Thunder are doing what champions do.
+Watch how those play out as the West semis develop. Tonight's NBA slate has Game 3 of Sixers-Knicks at seven, and Game 3 of Thunder-Lakers at nine-thirty.
 
-Oklahoma City Thunder defeated the Los Angeles Lakers one twenty-five to one oh seven and took a two-oh lead in the series in this conference semifinal in the NBA playoffs.
+In the NHL, the playoffs are getting wild.
 
-Chet Holmgren and Shai Gilgeous-Alexander scored twenty-two points apiece and Ajay Mitchell added twenty to lead the defending NBA champions to a one twenty-five to one oh seven home win. Jared McCain dropped eighteen points, four-of-five from three-point range, in eighteen minutes off the bench for OKC, which shot fifty-six percent from the field. Austin Reaves scored thirty-one points for the Lakers, who played without Luka Dončić as he continues to rehab from a Grade Two left hamstring strain.
+The Sabres-Canadiens series is set for Game 2 on Friday night, with Buffalo leading one-zero after a 4-2 win in Game 1.
 
-McCain getting eighteen off the bench in eighteen minutes — that is the sentence that hurts to read in Philadelphia.
+Out West,
 
-The other Eastern semifinal, Cavs and Pistons, has been a stunner.
+the Golden Knights and Ducks are tied at one game apiece with Game 3 in Anaheim on Friday night.
 
-The Pistons survived a late comeback from the Cavs and held on for a one eleven to one oh one win.
+The Avalanche have a 2-0 lead on Minnesota, and that series shifts to Minnesota for Game 3 on Saturday. Cale Makar against Quinn Hughes in the same series is the kind of matchup hockey nerds will be replaying for years.
 
-Detroit leads two games to none.
+In MLB, beyond the Phillies, the trade-watch story is bubbling.
 
-Cleveland was ice cold from the three-point line, making just seven of twenty-nine from deep, and that proved to be the difference. This has been a rough series for James Harden, who scored just ten points on three-of-thirteen shooting, two days after committing seven turnovers in Game 1. Evan Mobley did well defensively with three blocks and three steals, but he was quiet elsewhere with just nine points and one rebound.
+The Athletics acquired switch-hitting catcher Jonah Heim from the Atlanta Braves for cash on Monday night in a trade between first-place teams.
 
-Wait — that's Harden in a Cavaliers uniform, the post-trade version of his career. The Cavs took on his contract betting he could be the bridge guard for a Mobley-Mitchell core, and Detroit is exposing him. The Pistons are sixty-and-twenty-two for a reason. Cade Cunningham is going to be the league's MVP within two years if he isn't already entering the conversation. This series is the appetizer.
+Just a depth move, but it tells you the Athletics are operating like a contender, which they are — they're leading the AL West at this writing. The Braves continue to shed payroll. Around the rest of the league, the Yankees are trying to right the ship, the Dodgers are the Dodgers, the Cubs and Tigers have been the early surprises, and the Marlins keep losing despite Sandy Alcántara pitching well. The All-Star Game is coming to Citizens Bank Park on July 14, and
 
-In the NHL, the other playoff developments.
+the Phillies are wearing an All-Star Game logo on both their caps and sleeves in 2026, as the Midsummer Classic will come to Citizens Bank Park on July 14.
 
-The Anaheim Ducks rallied together to secure a massive three-to-one road victory over the Vegas Golden Knights, tying their intense second-round series at one game apiece, setting the stage for a dramatic Game 3 back in California.
+Mark your calendar for that.
 
-Game 3 of that series is tonight.
+NFL news has been quiet, as it usually is in May, but the schedule release is right around the corner. The full league slate drops next week, and Eagles fans will be circling the Cowboys games, the Giants games, and any prime-time opportunities. Word out of NFL HQ is that the league is leaning into international games again, and Philadelphia could be a candidate for a London or Madrid trip. We'll see. The other NFL story bubbling under is the quarterback derby in the AFC South, where Indianapolis is looking at life potentially without Daniel Jones, and Trevor Lawrence is coming off the best season of his career in Jacksonville. That's a division to watch this fall.
 
-Out East, the Buffalo Sabres look like an absolute juggernaut right now, defending home ice at the KeyBank Center, relying on a dominant offensive surge to take Game 1 against the Montreal Canadiens.
+Quick college and combine note — the World Cup logistics are taking shape, and Lincoln Financial Field is about to host some of the biggest sporting events on the planet. France-versus-someone, Brazil-Haiti, Côte d'Ivoire-Ecuador, and a Round of 16. Ryan, if you're a soccer person at all, this summer is your moment. Even if you're not, a packed Linc on the Fourth of July with a Round of 16 World Cup match is going to be electric in a way only this city can pull off.
 
-Game 2 of Sabres-Canadiens is also tonight.
+That's the loop. Now let me leave you with one thought before we go.
 
-The Colorado Avalanche defeated the Minnesota Wild nine to six
+The thing about being a Philadelphia sports fan is that the seasons rarely move in straight lines. The Phillies were dead, then alive, then dead again last night, and tonight Luzardo will take the ball and we'll find out which team shows up. The Sixers were the heroes of Game 7, and now they're trying to scrape one win out of four to keep a season alive. The Flyers earned a second-round series for the first time in fourteen years, and they're using it to learn how the contenders win. The Eagles are quietly building. None of these stories has a tidy ending. They never do.
 
-in their series opener and have since taken a two-oh lead. The hockey calendar this weekend is going to be loaded.
-
-Around baseball, the AL East and NL Central races are starting to take shape. The Phillies' division remains tight at the top — the Mets and Braves have stayed in their tier — but the bigger national headline this morning is the Yankees-Mets schedule and the early Cy Young chatter for a couple of National League starters. The Phillies' best path back into the conversation remains internal. They need Painter to settle, they need Luzardo to find consistency, they need the bullpen to round into shape with Duran's return next week, and they need the defense to stop giving away outs. Same to-do list it has been for two weeks. Tonight is another chance to chip at it.
-
-NFL news is, as always at this time of year, mostly about schedule release and rookie contracts. The schedule release is expected within the next week.
-
-The playoff rematch gets a prime-time audience on November tenth.
-
-Eagles-49ers in prime time on November tenth is the biggest already-known item on the calendar, and it is the kind of date that gets circled in red pen the moment it drops. Every player on that roster remembers the Wild Card loss. Every coach remembers the Wild Card loss. The franchise has been built around making sure the next chapter against San Francisco ends differently.
-
-To close, here is the thread I keep pulling on this morning. Three of the four Philadelphia teams are in defining moments. The Phillies are in a defining month — May has historically been when this club either separates itself or starts the long, slow process of underperforming the win curve, and with seventeen and twenty on the books, the next twenty games will tell us whether the Mattingly bump was a real recalibration or a temporary spike. The Sixers are in a defining series — down zero-and-two to a Knicks team that has the playoff steel they lack, and tonight at home is the loudest the Wells Fargo Center will be all year. The Flyers are in a defining offseason — three-and-oh down, with a Game 4 to play tomorrow, and a thousand decisions about the second-line center and the power play coming after. Only the Eagles get to operate without the immediate clock ticking, and even they are running an offense designed by their fifth coordinator in five years.
-
-It is a lot. It always is in this city. Take the morning slow, pour the second cup of coffee, and remember that the rotation rolls over tonight with Luzardo on the mound and a chance to start a series against the Rockies on the right note. The Sixers tip at seven, the building will be alive, and Game 3 has historically been where this series shifts in one direction or another. We will be back tomorrow with a full Sixers reaction, a Flyers Game 4 preview, and whatever the Phillies give us tonight. Until then, take care of yourself, Ryan. Keep the faith where you can find it. We will talk in the morning.
+But that's the deal. You ride it because you love it. And tomorrow, we'll do this again — Saturday morning, after the Phillies open against Colorado tonight, after we see what kind of crowd shows up for Game 3 at the Xfinity Mobile Arena, after we know whether Embiid is playing. Mother's Day weekend, Ryan. Hug your mom, watch some baseball, and we'll talk again at sunup. Take care of yourself out there. Go Birds, go Phils, go Sixers, go Flyers. See you tomorrow.
